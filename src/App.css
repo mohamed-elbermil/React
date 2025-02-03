@@ -1,0 +1,119 @@
+/* Reset and common styles */
+@import url("./assets/css/variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 1em;
+}
+.element-next {
+  display: flex;
+}
+.long-btn {
+  background: var(--category);
+  color: #fff;
+}
+.little-btn {
+  border: solid 1px grey;
+}
+.all-card {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  border: solid 1px var(--grey-element);
+  padding: 14px;
+  border-radius: var(--border-radius);
+  transition: 0.4s;
+}
+.card:hover {
+  box-shadow: 0 0 3dvb #00000036;
+  border: none;
+}
+.card img {
+  margin-right: 1em;
+}
+.text-card {
+  width: 28em;
+}
+.title-icon span {
+  color: var(--category);
+  font-weight: 500;
+}
+.title-icon p {
+  font-weight: 600;
+  margin-top: 8px;
+}
+.title-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-icon i {
+  font-size: 20px;
+  color: #6941c6;
+}
+.heart {
+  border: solid 2px #d6bbfb;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.star {
+  display: flex;
+  gap: 9px;
+  margin: 1em 0;
+}
+.star i {
+  color: #fdb022;
+  animation: starAnimation 0.4s ease-in-out infinite;
+}
+@keyframes starAnimation {
+  0% {
+    transform: rotate(345deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(345deg);
+  }
+}
+
+.details {
+  color: var(--grey-element);
+}
+.infos-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infos-card-left {
+  display: flex;
+  align-items: center;
+  width: 19em;
+  justify-content: space-between;
+}
+.info-element {
+  display: flex;
+}
+.info-element i {
+  margin-right: 10px;
+  color: var(--grey-element);
+}
+.info-element span {
+  font-weight: 700;
+  color: black;
+}
