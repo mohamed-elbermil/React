@@ -30,9 +30,12 @@ button {
 .all-card {
   display: flex;
   justify-content: center;
+  margin: 3em 22em;
+  flex-direction: column;
 }
 .card {
   display: flex;
+  margin: 1em 0;
   border: solid 1px var(--grey-element);
   padding: 14px;
   border-radius: var(--border-radius);
@@ -41,6 +44,9 @@ button {
 .card:hover {
   box-shadow: 0 0 3dvb #00000036;
   border: none;
+}
+.card-content {
+  width: 100%;
 }
 .card img {
   margin-right: 1em;
@@ -66,15 +72,24 @@ button {
   color: #6941c6;
 }
 .heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid 2px #d6bbfb;
-  padding: 7px;
+  width: 3em;
+  height: 3em;
   border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.heart:hover {
+  background: #e1d0ff;
 }
 
 .star {
   display: flex;
   gap: 9px;
-  margin: 1em 0;
+  margin-right: 10px;
 }
 .star i {
   color: #fdb022;
@@ -93,7 +108,7 @@ button {
 }
 
 .details {
-  color: var(--grey-element);
+  color: var(--grey-text);
 }
 .infos-card {
   display: flex;
@@ -113,7 +128,13 @@ button {
   margin-right: 10px;
   color: var(--grey-element);
 }
-.info-element span {
+.card-price span {
   font-weight: 700;
   color: black;
+}
+.review {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  color: var(--grey-text);
 }
